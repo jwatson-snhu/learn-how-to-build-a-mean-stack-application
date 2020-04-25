@@ -13,6 +13,7 @@ import { Question } from '../../models/Question';
 import { SocketConnection } from '../../sockets/socket.connections';
 import { Answer } from '../../models/Answer';
 
+var logger = require('loopback-component-logger')('Question');
 
 /**
  * Api services for the `Question` model.
@@ -28,6 +29,7 @@ export class QuestionApi extends BaseLoopBackApi {
     @Optional() @Inject(ErrorHandler) protected errorHandler: ErrorHandler
   ) {
     super(http,  connection,  models, auth, errorHandler);
+    logger.debug('QuestionApi constructed');
   }
 
   /**
