@@ -12,12 +12,14 @@
   },
   "dependencies": {
     "@mean-expert/loopback-sdk-builder": "^2.3.1",
+    "bunyan": "^1.8.12",
     "compression": "^1.7.2",
     "cors": "^2.8.2",
     "helmet": "^3.10.0",
     "loopback": "^3.25.1",
     "loopback-boot": "^2.27.1",
     "loopback-component-explorer": "^5.3.0",
+    "loopback-component-logger": "^1.0.0",
     "loopback-connector-mongodb": "^4.1.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0"
